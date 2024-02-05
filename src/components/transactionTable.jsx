@@ -58,7 +58,7 @@ export const TransactionTable = ({userId}) => {
   return (
     <>
    
-   <Row>
+   <Row className='pt-5'>
      <Table striped bordered hover>
       <thead>
         <tr>

@@ -3,6 +3,7 @@ import TopNavbar from "../../components/topNavBar"
 import { useSelector } from "react-redux"
 import { TransactionForm } from "../../components/transactionForm"
 import { TransactionTable } from "../../components/transactionTable"
+import { CsvDownload } from "../../components/donwnloadCSV"
 
 export const TransactionPage = () =>{
 
@@ -19,6 +20,10 @@ export const TransactionPage = () =>{
             <TransactionForm user = {user}/>
 
             <hr />
+
+            <CsvDownload/>
+
+           
 
             <TransactionTable userId = {user?._id}/>
 
