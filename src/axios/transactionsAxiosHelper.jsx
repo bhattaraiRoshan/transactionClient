@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:8000";
+const baseURL = import.meta.env.PROD ? "https://transactionapi-95ys.onrender.com" : "http://localhost:8000";
 const transactionPath = "/api/transaction"
 
 
