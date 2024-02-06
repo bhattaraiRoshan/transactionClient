@@ -8,8 +8,8 @@ import { createTransactionAction } from "../pages/transaction/transactionAction"
 const initiFormDate = {
     title: "",
     type: "expense",
-    date: null,
-    amount: null,
+    date: "",
+    amount: "",
 }
 
 // eslint-disable-next-line react/prop-types
@@ -57,13 +57,7 @@ export const TransactionForm = ({user}) =>{
 
 
         // make an form empty
-        setFormDate({
-            title: "",
-            type: "expense",
-            date: "",
-            amount: "",
-
-        })
+        setFormDate(initiFormDate)
 
 
     }
