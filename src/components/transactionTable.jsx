@@ -14,6 +14,7 @@ export const TransactionTable = ({userId}) => {
 
     const [clickTransaction, setClickTransaction] = useState()
     const {transaction, model} = useSelector(state => state.transaction)
+    console.log(transaction);
   
 
     const dispatch = useDispatch()

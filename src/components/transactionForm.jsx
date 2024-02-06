@@ -56,7 +56,15 @@ export const TransactionForm = ({user}) =>{
         distpace(createTransactionAction(formData, user._id))
 
 
-        // create form data login 
+        // make an form empty
+        setFormDate({
+            title: "",
+            type: "expense",
+            date: "",
+            amount: "",
+
+        })
+
 
     }
 
